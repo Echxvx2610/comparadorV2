@@ -1,0 +1,132 @@
+/*=== �S�̑���(HEAD, BODY) ===*/
+@font-face {
+    font-family: 'Barcode';
+    src: url('barcode.ttf') format('truetype');
+}
+
+.barcode {
+    font-family: 'free 3 of 9', 'Barcode';
+    font-size: 24px; /* Ajusta el tamaño según sea necesario */
+}
+BODY
+{
+	FONT-FAMILY: VERDANA;
+}
+
+/*=== ���S�摜 ===*/
+IMG.LOGO
+{
+	FLOAT: LEFT;
+	MARGIN-LEFT: 10PX;
+}
+
+/*=== ���o��(H1, H2, H3, ...) ===*/
+H1
+{
+	TEXT-ALIGN: CENTER;
+}
+
+/*=== �e�[�u��(TABLE, TH, TR, TD) ===*/
+/* �e�[�u��(HEAD/UNIT����) */
+TABLE, TH, TR, TD
+{
+	FONT-SIZE: 8PT;
+}
+
+/* �e�[�u��(HEAD) */
+TABLE.HEAD
+{
+	MARGIN-LEFT: 3EM;
+	WIDTH: 85%;
+	BACKGROUND-COLOR: #FFFFFF;
+}
+
+TH.HEAD
+{
+	WIDTH: 200PX;
+	TEXT-ALIGN: LEFT;
+}
+
+TR.HEAD
+{
+}
+
+TD.HEAD
+{
+}
+
+/* �e�[�u��(UNIT) */
+TABLE.UNIT
+{
+	MARGIN-LEFT: 3EM;
+	WIDTH: 80%;
+	BORDER-COLLAPSE: COLLAPSE;
+	BACKGROUND-COLOR: #FFFFFF;
+}
+
+TH.UNIT
+{
+	BORDER-STYLE: SOLID;
+	BORDER-WIDTH: 2PX;
+	BORDER-COLOR: #BEBEBE;
+	BACKGROUND-COLOR: #EEEEEE;
+	TEXT-ALIGN: LEFT;
+}
+
+TR.UNIT
+{
+}
+
+TD.UNIT
+{
+	BORDER-STYLE: SOLID;
+	BORDER-WIDTH: 2PX;
+	BORDER-COLOR: #BEBEBE;
+}
+
+/*=== �C���[�W(IMG ����� �֘A�^�O) ===*/
+/* IMG ����� �֘A�^�O ���� */
+IMG.ICON, DIV.ICON
+{
+	WIDTH:   30PX;
+	HEIGHT:  30PX;
+}
+
+/* �摜��]�p�^�O */
+/* (pnDir�̉�]�����͍����A BasicImage��rotation�͉E���Ȃ̂ŁA
+	0/1/2/3���t�ɂȂ��Ă��邱�Ƃɒ���) */
+DIV.ROTATION0		/* 0�x */
+{
+	FILTER:	progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+}
+
+DIV.ROTATION1		/* 90�x */
+{
+	FILTER:	progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+DIV.ROTATION2		/* 180�x */
+{
+	FILTER:	progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+DIV.ROTATION3		/* 270�x */
+{
+	FILTER:	progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+/*=== �^�O�Ȃ����� ===*/
+.LEFT		/* ���� */
+{
+	TEXT-ALIGN: RIGHT;
+}
+
+.CENTER		/* ���� */
+{
+	TEXT-ALIGN: CENTER;
+}
+
+.RIGHT		/* �E�� */
+{
+	TEXT-ALIGN: RIGHT;
+}

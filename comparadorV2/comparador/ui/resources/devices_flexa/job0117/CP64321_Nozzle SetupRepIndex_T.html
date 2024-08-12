@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html">
+	<meta name="copy-right" content="Fuji Machine Mfg. Co., Ltd.">
+	<meta http-equiv="Expires" content="{$now}">
+	<link rel="stylesheet" href="../../Definition/Nozzle Setup_IndexReportStyle.css" type="text/css">
+	<title>CP64321 Nozzle Setup Report</title>
+</head>
+
+<script type="text/javascript" src="../../Definition/ReplaceInnerHTML.js"></script>
+<script type="text/javascript">
+<!--
+	function CreateContent()
+	{
+		ReplaceInnerHTML("Target1", "CP64321_NozzleReportHead_T.xml", "../../Definition/NozzleReportHead.xsl");
+		ReplaceInnerHTML("Target2", "CP64321_NozzleReportUnit_T.xml", "../../Definition/NozzleReportUnit.xsl");
+	}
+-->
+</script>
+
+<body onload="CreateContent()">
+<img class="logo" src="../../img/logo.jpg" width="70">
+<h1>Nozzle Setup Report</h1>
+<blockquote>
+	<hr>
+	<div id="Target1"></div>
+	<hr>
+	<div id="Target2"></div>
+	<hr>
+</blockquote>
+</body>
+</html>

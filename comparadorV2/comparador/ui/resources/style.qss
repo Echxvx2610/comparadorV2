@@ -1,0 +1,67 @@
+/* estilos.qss */
+
+QWidget {
+    background-color: #f0f0f0; /* Color de fondo para todos los widgets */
+    color: #333; /* Color de texto para todos los widgets */
+}
+
+QPushButton {
+    background-color: #007bff; /* Color de fondo para botones */
+    color: white; /* Color de texto para botones */
+    border: 1px solid #007bff; /* Borde para botones */
+    border-radius: 10px; /* Bordes redondeados para botones */
+    padding: 8px 16px; /* Espaciado interno para botones */
+}
+
+QPushButton::pressed{
+    background-color : white;
+    color : #007bff ; 
+}
+
+QTabBar::tab {
+    height: 40px; /* Altura de las pestañas */
+    width: 188px; /* Ancho de las pestañas */
+    font-size: 16px; /* Tamaño de la fuente */
+    background-color: lightgray; /* Fondo de las pestañas */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px; /* Espaciado interno */
+}
+
+QTabBar::tab:selected {
+    /* Estilos para la pestaña seleccionada ejemplo : rojo, azul, etc.*/
+    background-color: tomato; /* Fondo de la pestaña seleccionada */
+    color : white;
+}
+/* Estilo para el menú */
+QMenuBar {
+    background-color: #f0f0f0; /* Color de fondo para la barra de menú */
+    color: #333; /* Color de texto para la barra de menú */
+}
+
+/* Estilo para los elementos de menú */
+QMenuBar::item {
+    padding: 8px 16px; /* Espaciado interno para los elementos de menú */
+}
+
+/* Estilo para los elementos de menú cuando se les hace hover */
+QMenuBar::item:hover {
+    background-color: #d0d0d0; /* Cambia el color de fondo al hacer hover */
+}
+
+/* Estilo para los menús desplegables */
+QMenu {
+    background-color: #ffffff; /* Color de fondo para los menús desplegables */
+    color: #333; /* Color de texto para los menús desplegables */
+    border: 1px solid #cccccc; /* Borde para los menús desplegables */
+}
+
+/* Estilo para los elementos de menú dentro de los menús desplegables */
+QMenu::item {
+    padding: 8px 16px; /* Espaciado interno para los elementos de menú */
+}
+
+/* Estilo para los elementos de menú dentro de los menús desplegables cuando se les hace hover */
+QMenu::item:hover {
+    background-color: black; /* Cambia el color de fondo al hacer hover */
+}
